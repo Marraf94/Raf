@@ -1,0 +1,669 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marceca s.r.l.s. - Qualità che avvolge.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#04372a',
+                        secondary: '#0a5c45',
+                        accent: '#e9f5f2',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-pattern {
+            background-color: #04372a;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(4, 55, 42, 0.2);
+        }
+        /* Stili per i segnaposto delle immagini */
+        .image-placeholder {
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://i.postimg.cc/3RL7WYgk/Immagine-Whats-App-2025-01-13-ore-10-32-20-6e1805c6.jpg" alt="La mia immagine" width="300">
+                <div class="flex items-center">
+                    
+                    <div class>
+                        <span></span>
+                    </div>
+                    <div class="ml-2">
+                        <h1 class="text-2xl font-bold text-primary">Marceca s.r.l.s. <span class="text-sm align-text-top"></span></h1>
+                        <p class="text-xs text-gray-600">Commercializzazione Imballaggi e Addobbi Agricoli</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-gray-700 hover:text-primary font-medium">Home</a></li>
+                    <li><a href="#chi-siamo" class="text-gray-700 hover:text-primary font-medium">Chi Siamo</a></li>
+                    <li><a href="#prodotti" class="text-gray-700 hover:text-primary font-medium">Prodotti</a></li>
+                    <li><a href="#servizi" class="text-gray-700 hover:text-primary font-medium">Servizi</a></li>
+                    <li><a href="#contatti" class="text-gray-700 hover:text-primary font-medium">Contatti</a></li>
+                </ul>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <ul class="px-4 py-2">
+                <li><a href="#home" class="block py-2 text-gray-700 hover:text-primary">Home</a></li>
+                <li><a href="#chi-siamo" class="block py-2 text-gray-700 hover:text-primary">Chi Siamo</a></li>
+                <li><a href="#prodotti" class="block py-2 text-gray-700 hover:text-primary">Prodotti</a></li>
+                <li><a href="#servizi" class="block py-2 text-gray-700 hover:text-primary">Servizi</a></li>
+                <li><a href="#contatti" class="block py-2 text-gray-700 hover:text-primary">Contatti</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                    <div class="mb-8 flex justify-center md:justify-start">
+                        
+                        <div >
+                            <span class="text-3xl font-bold"></span>
+                        </div>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6"></h2>
+                    <p class="text-lg md:text-xl mb-8 opacity-90">Marceca s.r.l.s. commercializza imballaggi di qualità in plastica e cartone, pedane in legno e addobbi agricoli.</p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                        <a href="#prodotti" class="bg-white text-primary font-medium py-3 px-6 rounded-lg hover:bg-gray-100 transition duration-300">Scopri i Prodotti</a>
+                        <a href="#contatti" class="bg-secondary text-white font-medium py-3 px-6 rounded-lg hover:bg-opacity-90 transition duration-300">Contattaci</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    
+                    
+                        
+                        <img src="https://i.postimg.cc/nz1KDwzj/Progetto-senza-titolo-32.png" alt="La mia immagine" width="800">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chi Siamo -->
+    <section id="chi-siamo" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-primary mb-4">Chi Siamo</h2>
+                    <div class="w-20 h-1 bg-primary mb-6"></div>
+                    <p class="text-gray-700 mb-4">Marceca s.r.l.s. è un'azienda specializzata nella commercializzazione di imballaggi di alta qualità e addobbi per il settore agricolo.</p>
+                    <p class="text-gray-700 mb-4">Con anni di esperienza nel settore, offriamo una vasta gamma di prodotti che includono imballaggi in plastica e cartone, pedane in legno e addobbi agricoli, tutti selezionati per soddisfare le esigenze specifiche dei nostri clienti.</p>
+                    <p class="text-gray-700">Il nostro impegno per la qualità e l'innovazione ci ha permesso di diventare un partner affidabile per aziende di diverse dimensioni, fornendo soluzioni personalizzate che rispondono alle loro necessità logistiche e operative.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://i.postimg.cc/sf4G9NrK/IMG-2821.jpg" alt="La mia immagine" width="800">
+                    <div >
+                        <svg >
+                            <path>
+                        <>
+                        <>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prodotti in Evidenza -->
+    <section id="prodotti" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">I Nostri Prodotti</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto">Offriamo una gamma completa di prodotti per imballaggio e soluzioni agricole, selezionati dai migliori produttori per garantire qualità e affidabilità.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Prodotto 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+                    <img src="https://i.postimg.cc/zvdqVWgZ/59-B04-EB7-3-ACA-4-D10-8867-747-DF03-D8255.jpg" width="500">
+           <div >
+                        <svg> 
+                            <path ></path>
+                        </svg>
+                        <p class="mt-2 text-gray-500 text-center px-4"></p>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Imballaggi in Plastica</h3>
+                        <p class="text-gray-700 mb-4">Una vasta gamma di soluzioni di imballaggio in plastica per ogni esigenza, dai contenitori ai film estensibili.</p>
+                        <a href="#" class="text-primary font-medium hover:underline">Scopri di più →</a>
+                    </div>
+                </div>
+                
+                <!-- Prodotto 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+                    <img src="https://i.postimg.cc/SxP3jd1f/IMG-1359.jpg" alt="La mia immagine" width="500">
+                    <div >
+                        <svg> 
+                       
+                            <path ></path>
+                        </svg>
+                        <p ></p>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Imballaggi in Cartone</h3>
+                        <p class="text-gray-700 mb-4">Soluzioni di imballaggio in cartone resistenti e personalizzabili, dagli imballaggi ortofrutticoli alle scatole standard e agli espositori..</p>
+                        <a href="#" class="text-primary font-medium hover:underline">Scopri di più →</a>
+                    </div>
+                </div>
+                
+                <!-- Prodotto 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+                    <img src="https://i.postimg.cc/FzZsQ8ZZ/IMG-1293.jpg" width="500">
+                    <div >
+                        <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path ></path>
+                        </svg>
+                        <p ></p>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Pedane in Legno</h3>
+                        <p class="text-gray-700 mb-4">Pedane in legno robuste e conformi agli standard internazionali, ideali per lo stoccaggio e il trasporto.</p>
+                        <a href="#" class="text-primary font-medium hover:underline">Scopri di più →</a>
+                    </div>
+                </div>
+                
+                <!-- Prodotto 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+                    <img src="https://i.postimg.cc/XJPtB8vb/IMG-2040-1.jpg" alt="Testo descrittivo" width="500">
+                    <div >
+                        <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path ></path>
+                        </svg>
+                        <p ></p>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Accessori e Complementi</h3>
+                        <p class="text-gray-700 mb-4">Accessori e complementi per imballaggio, tra cui Angolari in Cartone e PVC, etichette, reggette e materiali di riempimento.</p>
+                        <a href="#" class="text-primary font-medium hover:underline">Scopri di più →</a>
+                    </div>
+                </div>
+                
+                
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="bg-primary text-white font-medium py-3 px-8 rounded-lg hover:bg-secondary transition duration-300">Visualizza Tutti i Prodotti</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galleria Prodotti -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Galleria Prodotti</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto">Scopri alcuni dei nostri prodotti più richiesti attraverso la nostra galleria fotografica.</p>
+            </div>
+            
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <img src="https://i.postimg.cc/7hK1GX4N/157a51249b906e70ce5c31c7ed12b6d6-900x.webp" alt="Testo descrittivo" width="300">
+                <div >
+                    <svg >
+                        <path ></path>
+                    </svg>
+                    <p ></p>
+                </div>
+                
+                <img src="https://i.postimg.cc/BnXpDWXP/81q-VQ2f664-L-AC-UF1000-1000-QL80.jpg" alt="Testo descrittivo" width="300">
+                <div class>
+                    <img src="https://i.postimg.cc/j5vj6FFB/pp-box-strapping.webp" alt="Testo descrittivo" width="300">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    
+                </div>
+                
+                <!-- Galleria Immagine 3 - SEGNAPOSTO -->
+                <div>
+                    <img src="https://i.postimg.cc/yNBrqQLf/angolari-cartone-bianchi-35x35x3dot5-h200.jpg" alt="Testo descrittivo" width="300">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    
+                </div>
+                
+                <!-- Galleria Immagine 4 - SEGNAPOSTO -->
+                <div>
+                    <img src="https://i.postimg.cc/C5XSmTHr/buste-uva-carta-avana-18x10x13-rette.jpg" alt="Testo descrittivo" width="300">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    
+                </div>
+                
+                <!-- Galleria Immagine 5 - SEGNAPOSTO -->
+                <div class>
+                    <img src="https://i.postimg.cc/hPL5CRrJ/2ef9ebdd-ecf5-4982-96e3-d150ce509718.png" alt="Testo descrittivo" width="300">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    <svg>
+                    
+                <div>
+                
+               
+                <div >
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servizi -->
+    <section id="servizi" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">I Nostri Servizi</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto">Offriamo una gamma completa di servizi per supportare la tua attività, dalla consulenza alla logistica.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servizio 1 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <!-- Immagine Servizio 1 - SEGNAPOSTO -->
+                        <svg class="w-24 h-24 text-white opacity-80" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 9h-2V5h2v6zm0 4h-2v-2h2v2z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Consulenza Personalizzata</h3>
+                        <p class="text-gray-700 mb-4">Offriamo servizi di consulenza per ottimizzare le tue soluzioni di imballaggio e logistica.</p>
+                        <ul class="text-gray-700 space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-secondary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Analisi delle esigenze logistiche
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-secondary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Selezione dei prodotti più adatti
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-secondary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Ottimizzazione dei costi
+                            </li>
+                        </ul>
+                        <a href="#" class="text-primary font-medium hover:underline">Scopri di più →</a>
+                    </div>
+                </div>
+                
+                <!-- Servizio 2 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                    <div class="h-48 bg-secondary flex items-center justify-center">
+                        <!-- Immagine Servizio 2 - SEGNAPOSTO -->
+                        <svg class="w-24 h-24 text-white opacity-80" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Distribuzione e Logistica</h3>
+                        <p class="text-gray-700 mb-4">Offriamo servizi completi di distribuzione e logistica per i nostri prodotti.</p>
+                        <ul class="text-gray-700 space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-secondary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Consegne rapide in tutta Italia
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-secondary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Gestione delle scorte
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-secondary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Tracciamento delle spedizioni
+                            </li>
+                        </ul>
+                        <a href="#" class="text-primary font-medium hover:underline">Scopri di più →</a>
+                    </div>
+                </div>
+                
+                <!-- Servizio 3 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                    <div class="h-48 bg-primary flex items-center justify-center">
+                        <!-- Immagine Servizio 3 - SEGNAPOSTO -->
+                        <svg class="w-24 h-24 text-white opacity-80" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 15.5h-1.5V14h-1v3H8v-3H7v4.5H5.5v-5c0-.55.45-1 1-1H11c.55 0 1 .45 1 1v5zm3.5 0H14v-6h3.5c.55 0 1 .45 1 1V16c0 .55-.45 1-1 1h-2v1.5zm-1-8c0 .55-.45 1-1 1H10V10h3V9h-2V8h2V7h-3V5.5h3.5c.55 0 1 .45 1 1v4zm1 3.5H17v1.5h-1.5z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Soluzioni Personalizzate</h3>
+                        <p class="text-gray-700 mb-4">Offriamo soluzioni su misura per le specifiche esigenze della tua attività.</p>
+                        <ul class="text-gray-700 space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-secondary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Prodotti su misura
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-secondary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Packaging personalizzato
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-secondary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Soluzioni integrate
+                            </li>
+                        </ul>
+                        <a href="#" class="text-primary font-medium hover:underline">Scopri di più →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner e Fornitori -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">I Nostri Partner</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto">Collaboriamo con i migliori produttori e fornitori del settore per garantire prodotti di alta qualità ai nostri clienti.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Partner Logo 1 - SEGNAPOSTO -->
+                <div >
+                    <img src="https://i.postimg.cc/150yDTVB/download.png" alt="Testo descrittivo" width="300">
+                </div>
+                
+               
+                <div>
+                   <img src="https://i.postimg.cc/c1mDYB4Y/Logo-Grupo-Hinojosa.png" alt="Testo descrittivo" width="300">
+                </div>
+                
+                <!-- Partner Logo 3 - SEGNAPOSTO -->
+                <div >
+                    <img src="https://i.postimg.cc/CxFfWX3r/LOGO-NOVAPACK.png" alt="Testo descrittivo" width="300">
+                </div>
+                
+                <!-- Partner Logo 4 - SEGNAPOSTO -->
+                <div>
+                    <img src="https://i.postimg.cc/MZ7HqtbC/images.png" alt="Testo descrittivo" width="300">
+                </div>
+                
+                <div>
+                <img src="https://i.postimg.cc/85T3W19B/logo-plasticontenitor.png" alt="Testo descrittivo" width="300">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-2/3 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-4">Pronti a migliorare le vostre soluzioni di imballaggio?</h2>
+                    <p class="text-lg opacity-90">Contattaci oggi stesso per una consulenza gratuita e scopri come possiamo aiutarti a ottimizzare i tuoi processi logistici.</p>
+                </div>
+                <div>
+                    <a href="#contatti" class="bg-white text-primary font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300">Contattaci Ora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti -->
+    <section id="contatti" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Contattaci</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto">Siamo a tua disposizione per qualsiasi informazione o richiesta. Compila il modulo sottostante e ti risponderemo al più presto.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <form id="contact-form" class="bg-gray-50 p-8 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nome e Cognome</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Telefono</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Messaggio</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-primary text-white font-medium py-3 px-6 rounded-lg hover:bg-secondary transition duration-300">Invia Messaggio</button>
+                        </div>
+                        <p class="text-center text-sm text-gray-500 mt-4">Questo è un modulo dimostrativo. In un sito reale, i dati verrebbero inviati a un server.</p>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-accent p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-xl font-bold text-primary mb-6">Informazioni di Contatto</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-primary rounded-full p-3 mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-primary">Indirizzo</h4>
+                                    <p class="text-gray-700 mt-1">C.da Alcerito km 2,00<br>97019 Vittoria (RG), Italia</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-primary rounded-full p-3 mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-primary">Telefono</h4>
+                                    <p class="text-gray-700 mt-1">+39 393 8047803</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-primary rounded-full p-3 mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-primary">Email</h4>
+                                    <p class="text-gray-700 mt-1">marcecasrls@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-primary rounded-full p-3 mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-primary">Orari di Apertura</h4>
+                                    <p class="text-gray-700 mt-1">Lunedì - Venerdì: 7:00 - 13:00, 14:30 - 18:00</p>
+                                    <p class="text-gray-700">Sabato: 7:00 - 13:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-medium text-primary mb-4">Seguici sui Social</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-primary text-white p-2 rounded-full hover:bg-secondary transition duration-300">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="bg-primary text-white p-2 rounded-full hover:bg-secondary transition duration-300">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="bg-primary text-white p-2 rounded-full hover:bg-secondary transition duration-300">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="bg-primary text-white p-2 rounded-full hover:bg-secondary transition duration-300">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <!-- Logo nel footer - SEGNAPOSTO -->
+                        <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                            <img src="https://i.postimg.cc/gJr74Mcn/Progetto-senza-titolo.png" alt="Testo descrittivo" width="200">
+                        </div>
+                        <h3 class="ml-2 text-xl font-bold">Marceca s.r.l.s.</span></h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Imballaggi e Addobbi agricoli di alta qualità per soddisfare le esigenze della tua azienda.</p>
+                    <p class="text-gray-300">P.IVA: 01844320885</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Link Rapidi</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#chi-siamo" class="text-gray-300 hover:text-white transition duration-300">Chi Siamo</a></li>
+                        <li><a href="#prodotti" class="text-gray-300 hover:text-white transition duration-300">Prodotti</a></li>
+                        <li><a href="#servizi" class="text-gray-300 hover:text-white transition duration-300">Servizi</a></li>
+                        <li><a href="#contatti" class="text-gray-300 hover:text-white transition duration-300">Contatti</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                    <p class="text-gray-300 mb-4">Iscriviti alla nostra newsletter per ricevere aggiornamenti e offerte speciali.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="La tua email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-secondary px-4 py-2 rounded-r-lg hover:bg-opacity-90 transition duration-300">Iscriviti</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+                <p class="text-gray-300">&copy; 2023 Marceca s.r.l.s. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Contact form submission
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real implementation, you would send the form data to a server
+            // For this demo, we'll just show an alert
+            alert('Grazie per averci contattato! Ti risponderemo al più presto.');
+            contactForm.reset();
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93d755b6e12bedb6',t:'MTc0Njg1ODA2OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl">
