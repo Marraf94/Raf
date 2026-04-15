@@ -29,6 +29,7 @@
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap');
 
     html { scroll-behavior: smooth; }
 
@@ -39,6 +40,12 @@
     }
 
     .title-font {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+    }
+
+    .hero-title-font {
       font-family: 'DM Serif Display', serif;
       letter-spacing: -0.2px;
     }
@@ -221,11 +228,14 @@
     <div class="glass-nav">
       <div class="container mx-auto px-4 py-4 flex justify-between items-center">
         <div class="flex items-center gap-3 md:gap-4">
-          <div class="w-14 h-14 md:w-16 md:h-16 bg-white rounded-2xl overflow-hidden shadow-lg p-2 flex items-center justify-center">
-            <img src="https://i.postimg.cc/3RL7WYgk/Immagine-Whats-App-2025-01-13-ore-10-32-20-6e1805c6.jpg" alt="Marceca Logo" class="w-full h-full object-contain" loading="lazy">
+          
+          <!-- LOGO AGGIORNATO -->
+          <div class="w-14 h-14 md:w-16 md:h-16 rounded-2xl overflow-hidden p-2 flex items-center justify-center">
+            <img src="https://i.ibb.co/SwbkhwzD/IMG-2719.png" alt="Marceca Logo" class="w-full h-full object-contain" loading="lazy">
           </div>
+
           <div>
-            <h1 class="text-lg md:text-2xl font-bold text-white title-font">Marceca</h1>
+            <h1 class="text-lg md:text-2xl font-bold text-white title-font" style="letter-spacing:1px;">Marceca</h1>
             <p class="text-xs md:text-sm text-white/80 font-light">Imballaggi &amp; Addobbi Agricoli</p>
           </div>
         </div>
@@ -267,7 +277,7 @@
         <span class="inline-block mb-5 px-4 py-2 rounded-full bg-white/10 border border-white/10 text-sm font-medium">
           Soluzioni per agricoltura, imballaggio e stoccaggio
         </span>
-        <h2 class="text-4xl md:text-6xl title-font mb-6 leading-tight">
+        <h2 class="text-4xl md:text-6xl hero-title-font mb-6 leading-tight">
           Qualità che avvolge
         </h2>
         <p class="text-lg md:text-xl text-white/85 mb-8 font-light max-w-2xl leading-relaxed">
@@ -288,7 +298,7 @@
   <section id="chi-siamo" class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="section-title text-3xl md:text-4xl font-bold text-primary title-font mb-4">Chi Siamo</h2>
+        <h2 class="section-title text-3xl md:text-4xl font-bold text-primary hero-title-font mb-4">Chi Siamo</h2>
         <p class="text-gray-600 text-lg max-w-2xl mx-auto">
           Più di 10 anni di esperienza nel settore della commercializzazione di imballaggi e addobbi agricoli
         </p>
@@ -357,7 +367,7 @@
   <section id="prodotti" class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4">
       <div class="text-center mb-12">
-        <h2 class="section-title text-3xl md:text-4xl font-bold text-primary title-font mb-4">Catalogo Prodotti</h2>
+        <h2 class="section-title text-3xl md:text-4xl font-bold text-primary hero-title-font mb-4">Catalogo Prodotti</h2>
         <p class="text-gray-600 text-lg max-w-2xl mx-auto">
           Esplora la nostra selezione di prodotti con filtri rapidi per categoria
         </p>
@@ -448,8 +458,8 @@
         </div>
 
         <div class="product-card fade-in product-item" data-category="cartone" data-name="imballaggi in cartone scatole packaging cartone">
-          <div class="product-image-wrap" onclick="openImageModal('immagine-tradizione-di-sicilia.jpg', 'Imballaggi in Cartone')">
-            <img src="immagine-tradizione-di-sicilia.jpg" alt="Imballaggi in Cartone" class="product-image" loading="lazy">
+          <div class="product-image-wrap" onclick="openImageModal('https://i.ibb.co/1tRSYwP9/FU2667-3-D-BLU-SENZA-BANDIERA.jpg', 'Imballaggi in Cartone')">
+            <img src="https://i.ibb.co/1tRSYwP9/FU2667-3-D-BLU-SENZA-BANDIERA.jpg" alt="Imballaggi in Cartone" class="product-image" loading="lazy">
           </div>
           <div class="p-5">
             <div class="flex items-center justify-between gap-3 mb-3">
@@ -576,7 +586,6 @@
             <p class="text-gray-600 text-sm leading-relaxed">Per la pulizia profonda dei pavimenti industriali, anche nelle aree ad alto traffico.</p>
           </div>
         </div>
-
       </div>
 
       <div id="noResults" class="hidden text-center mt-10">
@@ -607,7 +616,7 @@
   <section id="partners" class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="section-title text-3xl md:text-4xl font-bold text-primary title-font mb-4">I Nostri Partner</h2>
+        <h2 class="section-title text-3xl md:text-4xl font-bold text-primary hero-title-font mb-4">I Nostri Partner</h2>
         <p class="text-gray-600 text-lg max-w-2xl mx-auto">Collaboriamo con fornitori e aziende del settore</p>
       </div>
 
@@ -626,7 +635,7 @@
   <section id="servizi" class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="section-title text-3xl md:text-4xl font-bold text-primary title-font mb-4">I Nostri Servizi</h2>
+        <h2 class="section-title text-3xl md:text-4xl font-bold text-primary hero-title-font mb-4">I Nostri Servizi</h2>
         <p class="text-gray-600 text-lg max-w-2xl mx-auto">Supporto completo dalla consulenza alla consegna</p>
       </div>
 
@@ -661,7 +670,7 @@
   <section id="contatti" class="py-16 md:py-24 bg-white">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="section-title text-3xl md:text-4xl font-bold text-primary title-font mb-4">Contattaci</h2>
+        <h2 class="section-title text-3xl md:text-4xl font-bold text-primary hero-title-font mb-4">Contattaci</h2>
         <p class="text-gray-600 text-lg max-w-2xl mx-auto">Siamo pronti a rispondere alle tue domande e offrirti le migliori soluzioni</p>
       </div>
 
@@ -751,7 +760,7 @@
   <section id="certificazioni" class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="section-title text-3xl md:text-4xl font-bold text-primary title-font mb-4">Certificazioni</h2>
+        <h2 class="section-title text-3xl md:text-4xl font-bold text-primary hero-title-font mb-4">Certificazioni</h2>
         <p class="text-gray-600 text-lg max-w-2xl mx-auto">I nostri standard di qualità e sostenibilità</p>
       </div>
 
