@@ -492,6 +492,63 @@
       .marceca-logo img { height:82px !important; max-width:135px; }
     }
 
+
+    .brand-lockup {
+      display:flex;
+      align-items:center;
+      gap:22px;
+      min-width:430px;
+    }
+    .brand-lockup .marceca-logo {
+      min-width:auto;
+    }
+    .brand-wording {
+      padding-left:22px;
+      border-left:1px solid rgba(6,76,60,.16);
+      line-height:1;
+    }
+    .brand-name {
+      font-family:'Marcellus','DM Serif Display',serif;
+      font-size:2.15rem;
+      color:#064c3c;
+      letter-spacing:-.03em;
+      font-weight:400;
+      margin-bottom:8px;
+    }
+    .brand-subtitle {
+      font-family:'Inter',sans-serif;
+      font-size:.78rem;
+      letter-spacing:.17em;
+      text-transform:uppercase;
+      color:#c9a96a;
+      font-weight:700;
+    }
+    .brand-subtitle-small {
+      display:block;
+      margin-top:5px;
+      letter-spacing:.08em;
+      text-transform:none;
+      color:#607169;
+      font-size:.74rem;
+      font-weight:600;
+    }
+    .hero-payoff {
+      margin-top:1.1rem;
+      color:#34453e;
+      font-size:1.15rem;
+      font-weight:500;
+    }
+    @media(max-width:1200px) {
+      .brand-lockup { min-width:330px; gap:14px; }
+      .brand-wording { padding-left:14px; }
+      .brand-name { font-size:1.7rem; }
+      .brand-subtitle { font-size:.66rem; }
+    }
+    @media(max-width:1024px) {
+      .brand-wording { display:none; }
+      .brand-lockup { min-width:auto; }
+    }
+
 </style>
 </head>
 
@@ -571,6 +628,7 @@
     <div>
       
       <h2 class="marceca-title"><span style="color:#063c30" data-i18n="hero.line1">La qualità non è un dettaglio.</span><span data-i18n="hero.line2">È una scelta.</span></h2>
+      <div class="hero-payoff" data-i18n="hero.payoff">Packaging Solutions for Fresh Produce</div>
       <p class="marceca-lead"><span data-i18n="hero.lead">Soluzioni professionali per il packaging ortofrutticolo, selezionate per garantire affidabilità, continuità e una presentazione all’altezza del tuo prodotto.</span></p>
       <div class="marceca-actions">
         <a href="#prodotti" data-catalog-trigger="true" class="marceca-primary"><span data-i18n="hero.catalog">Esplora il catalogo →</span></a>
@@ -1407,6 +1465,7 @@
 <script>
   const translations = {
     it: {
+      "hero.payoff":"Packaging Solutions for Fresh Produce",
       "nav.home":"Home","nav.about":"Chi siamo","nav.partners":"Partner","nav.services":"Servizi","nav.contacts":"Contatti","nav.catalog":"Catalogo",
       "hero.line1":"La qualità non è un dettaglio.","hero.line2":"È una scelta.",
       "hero.lead":"Soluzioni professionali per il packaging ortofrutticolo, selezionate per garantire affidabilità, continuità e una presentazione all’altezza del tuo prodotto.",
@@ -1424,6 +1483,7 @@
       "product.shrink_text":"Protezione, tenuta e presentazione del prodotto."
     },
     en: {
+      "hero.payoff":"Packaging Solutions for Fresh Produce",
       "nav.home":"Home","nav.about":"About us","nav.partners":"Partners","nav.services":"Services","nav.contacts":"Contacts","nav.catalog":"Catalogue",
       "hero.line1":"Quality is not a detail.","hero.line2":"It is a choice.",
       "hero.lead":"Professional fresh-produce packaging solutions selected to ensure reliability, continuity and a presentation worthy of your product.",
@@ -1441,6 +1501,7 @@
       "product.shrink_text":"Protection, sealing and product presentation."
     },
     es: {
+      "hero.payoff":"Soluciones de packaging para frutas y hortalizas",
       "nav.home":"Inicio","nav.about":"Quiénes somos","nav.partners":"Socios","nav.services":"Servicios","nav.contacts":"Contacto","nav.catalog":"Catálogo",
       "hero.line1":"La calidad no es un detalle.","hero.line2":"Es una elección.",
       "hero.lead":"Soluciones profesionales de envasado hortofrutícola seleccionadas para garantizar fiabilidad, continuidad y una presentación a la altura de tu producto.",
@@ -1458,6 +1519,7 @@
       "product.shrink_text":"Protección, sellado y presentación del producto."
     },
     de: {
+      "hero.payoff":"Verpackungslösungen für frische Produkte",
       "nav.home":"Startseite","nav.about":"Über uns","nav.partners":"Partner","nav.services":"Leistungen","nav.contacts":"Kontakt","nav.catalog":"Katalog",
       "hero.line1":"Qualität ist kein Detail.","hero.line2":"Sie ist eine Entscheidung.",
       "hero.lead":"Professionelle Verpackungslösungen für Obst und Gemüse, ausgewählt für Zuverlässigkeit, Kontinuität und eine hochwertige Produktpräsentation.",
@@ -1475,6 +1537,7 @@
       "product.shrink_text":"Schutz, Versiegelung und Produktpräsentation."
     },
     fr: {
+      "hero.payoff":"Solutions d’emballage pour les fruits et légumes",
       "nav.home":"Accueil","nav.about":"À propos","nav.partners":"Partenaires","nav.services":"Services","nav.contacts":"Contact","nav.catalog":"Catalogue",
       "hero.line1":"La qualité n’est pas un détail.","hero.line2":"C’est un choix.",
       "hero.lead":"Des solutions professionnelles d’emballage pour les fruits et légumes, sélectionnées pour garantir fiabilité, continuité et une présentation à la hauteur de votre produit.",
